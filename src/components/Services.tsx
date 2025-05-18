@@ -5,7 +5,7 @@ import { Check } from 'lucide-react';
 
 const services = [
 	{
-		title: "Nutrição Clínica",
+		title: "Nutrição Clínica 🩺",
 		description: "Tratamento nutricional personalizado para diversas condições de saúde",
 		features: [
 			"Avaliação nutricional completa",
@@ -15,7 +15,7 @@ const services = [
 		]
 	},
 	{
-		title: "Saúde Digestiva",
+		title: "Saúde Digestiva 🍎",
 		description: "Especialização em tratamentos para problemas do sistema digestivo",
 		features: [
 			"Diagnóstico nutricional específico",
@@ -25,7 +25,7 @@ const services = [
 		]
 	},
 	{
-		title: "Nutrição Estética",
+		title: "Nutrição Estética 💪",
 		description: "Estratégias nutricionais para melhorar a composição corporal",
 		features: [
 			"Avaliação antropométrica detalhada",
@@ -70,15 +70,7 @@ const Services = () => {
 		touchStartX.current = null;
 	};
 
-	// Auto-advance carousel on mobile every 3s (looping)
-	useEffect(() => {
-		const isMobile = window.innerWidth < 768;
-		if (!isMobile) return;
-		const interval = setInterval(() => {
-			setActive(prev => (prev + 1) % services.length);
-		}, 3000);
-		return () => clearInterval(interval);
-	}, [active]);
+	// Removido o auto-advance do carousel
 
 	// Helper to get the correct index in a circular way
 	const getIndex = (idx: number) => (idx + services.length) % services.length;
@@ -105,7 +97,6 @@ const Services = () => {
 							minWidth: 0,
 							justifyContent: "center",
 							alignItems: "stretch",
-							// Centraliza o card ativo, mostra preview dos lados (peek)
 							transform: "none",
 							transition: "none",
 							gap: 0,
@@ -113,7 +104,6 @@ const Services = () => {
 						onTouchStart={handleTouchStart}
 						onTouchEnd={handleTouchEnd}
 					>
-						{/* Mostra todos os cards, mas centraliza o ativo com scroll snap */}
 						{services.map((service, index) => (
 							<div
 								key={index}
@@ -123,7 +113,7 @@ const Services = () => {
 									maxWidth: 340,
 									opacity: index === active ? 1 : 0.6,
 									transform: index === active
-										? "scale(1)"
+										? "scale(1.06)"
 										: "scale(0.92)",
 									transition: "transform 0.3s, opacity 0.3s",
 									zIndex: index === active ? 2 : 1,
