@@ -6,7 +6,7 @@ import { Star } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    name: "Mariana Costa",
+    name: "Isadora Helena Franco",
     role: "Paciente há 1 ano",
     content: "Com a Julia, consegui resolver meus problemas digestivos que me incomodavam há anos. Seu plano alimentar foi completamente adaptado às minhas necessidades e não senti dificuldade em segui-lo.",
     rating: 5
@@ -20,14 +20,14 @@ const testimonials = [
   },
   {
     id: 3,
-    name: "Carolina Lima",
+    name: "Vinicius Andrade",
     role: "Paciente há 2 anos",
     content: "O acompanhamento nutricional da Julia foi essencial para controlar minha condição de saúde. Ela realmente se importa com cada paciente e está sempre disponível para esclarecer dúvidas.",
     rating: 5
   },
   {
     id: 4,
-    name: "Gabriel Santos",
+    name: "Mini Piri",
     role: "Paciente há 3 meses",
     content: "Excelente profissional! Com seu plano alimentar personalizado, consegui melhorar minha performance esportiva e recuperação após os treinos. Recomendo a todos.",
     rating: 5
