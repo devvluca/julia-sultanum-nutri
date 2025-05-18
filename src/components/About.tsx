@@ -29,7 +29,17 @@ const About = () => {
             </p>
             <div className="flex items-center gap-2 text-bronze">
               <ArrowDown size={18} />
-              <span className="font-medium">CRN: 47502/P</span>
+              <span
+                className="font-medium cursor-pointer underline underline-offset-2 hover:text-bronze-dark transition-colors"
+                onClick={() => {
+                  const infoBox = document.querySelector('#contato .bg-cream');
+                  if (infoBox) {
+                    infoBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  }
+                }}
+              >
+                CRN: 47502/P
+              </span>
             </div>
           </div>
 

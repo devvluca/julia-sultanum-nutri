@@ -28,6 +28,14 @@ const Header = () => {
 	};
 
 	const scrollToSection = (id: string) => {
+		const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+		if (id === "contato" && isMobile) {
+			const form = document.querySelector('#contato form');
+			if (form) {
+				form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+				return;
+			}
+		}
 		const el = document.getElementById(id);
 		if (el) el.scrollIntoView({ behavior: "smooth" });
 	};

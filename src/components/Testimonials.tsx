@@ -8,7 +8,7 @@ const testimonials = [
     id: 1,
     name: "Isadora Helena Franco",
     role: "Paciente há 1 ano",
-    content: "Com a Julia, consegui resolver meus problemas digestivos que me incomodavam há anos. Seu plano alimentar foi completamente adaptado às minhas necessidades e não senti dificuldade em segui-lo.",
+    content: "Com a Júlia, consegui resolver meus problemas digestivos que me incomodavam há anos. Seu plano alimentar foi completamente adaptado às minhas necessidades e não senti dificuldade em segui-lo.",
     rating: 5
   },
   {
