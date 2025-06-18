@@ -6,7 +6,7 @@ const About = () => {
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center mb-16" data-aos="fade-up">
           <h2 className="text-3xl md:text-4xl font-semibold mb-6">
-            Sobre Julia Sultanum
+            Sobre Júlia Sultanum
           </h2>
           <div className="w-20 h-1 bg-bronze mx-auto mb-6"></div>
           <p className="text-charcoal text-lg">
@@ -47,7 +47,7 @@ const About = () => {
             <div className="relative w-full max-w-sm">
               <div className="absolute -top-4 -left-4 w-full h-full border-2 border-bronze rounded-xl"></div>
               <img 
-                src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80" 
+                src="/img/mini-imagem.jpg" 
                 alt="Julia Sultanum Nutricionista" 
                 className="w-full h-full object-cover rounded-xl shadow-lg"
               />

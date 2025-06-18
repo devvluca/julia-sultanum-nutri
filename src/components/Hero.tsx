@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Button } from './ui/button';
 
 const banner = {
-  image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1920&auto=format&fit=crop",
+  image: "/img/banner-julia.jpg",
   description: "Nutricionista especializada em saúde digestiva e estética, com abordagem personalizada para resultados duradouros."
 };
 
@@ -73,7 +73,7 @@ const Hero = () => {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.5)), url('${banner.image}')`,
+          backgroundImage: `url('${banner.image}')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           zIndex: 0,
