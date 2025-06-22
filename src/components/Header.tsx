@@ -4,7 +4,6 @@ import { Button } from "./ui/button";
 const NAV_ITEMS = [
 	{ id: "sobre", label: "Sobre" },
 	{ id: "serviços", label: "Serviços" },
-	{ id: "depoimentos", label: "Depoimentos" },
 	{ id: "contato", label: "Contato" },
 ];
 
