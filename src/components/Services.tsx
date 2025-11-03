@@ -2,10 +2,12 @@ import { useState } from "react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
 import { Check } from 'lucide-react';
+import { Syringe, Leaf, Flame, PuzzlePiece } from 'phosphor-react';
 
 const services = [
 	{
-		title: "Nutrição Clínica 🩺",
+		title: "Nutrição Clínica",
+		icon: Syringe,
 		description: "Tratamento nutricional personalizado para diversas condições de saúde",
 		features: [
 			"Avaliação nutricional completa",
@@ -15,7 +17,8 @@ const services = [
 		]
 	},
 	{
-		title: "Saúde Digestiva 🍎",
+		title: "Saúde Digestiva",
+		icon: Leaf,
 		description: "Especialização em tratamentos para problemas do sistema digestivo",
 		features: [
 			"Diagnóstico nutricional específico",
@@ -25,7 +28,8 @@ const services = [
 		]
 	},
 	{
-		title: "Nutrição Estética 💪",
+		title: "Nutrição Estética",
+		icon: Flame,
 		description: "Estratégias nutricionais para melhorar a composição corporal",
 		features: [
 			"Avaliação antropométrica detalhada",
@@ -35,7 +39,8 @@ const services = [
 		]
 	},
 	{
-		title: "Nutrição para TEA 🧩",
+		title: "Nutrição para TEA",
+		icon: PuzzlePiece,
 		description: "Abordagem nutricional especializada para pessoas com Transtorno do Espectro Autista",
 		features: [
 			"Análise de seletividade alimentar",
@@ -95,7 +100,10 @@ const Services = () => {
 						>
 							<Card className="h-full flex flex-col border-gray-200">
 								<CardHeader>
-									<CardTitle className="text-2xl text-bronze">{service.title}</CardTitle>
+									<CardTitle className="text-2xl text-bronze flex items-center gap-2">
+										{service.icon && <service.icon size={24} weight="regular" color="#C89F7B" />}
+										{service.title}
+									</CardTitle>
 									<CardDescription className="text-base">{service.description}</CardDescription>
 								</CardHeader>
 								<CardContent className="flex-grow">
